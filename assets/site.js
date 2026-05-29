@@ -10,7 +10,7 @@ if (headerTarget) {
       <div class="top-strip">
         <div class="container">
           <span>CPA services for the District of Columbia, Maryland, and Virginia</span>
-          <span><a href="mailto:info@cpa-dmv.com">info@cpa-dmv.com</a></span>
+          <span><a href="mailto:support@cpa-dmv.com">support@cpa-dmv.com</a></span>
         </div>
       </div>
       <div class="container nav-wrap">
@@ -102,7 +102,7 @@ if (footerTarget) {
         <div>
           <h3>Contact</h3>
           <ul>
-            <li>Email: <a href="mailto:info@cpa-dmv.com">info@cpa-dmv.com</a></li>
+            <li>Email: <a href="mailto:support@cpa-dmv.com">support@cpa-dmv.com</a></li>
             <li>Address: 10521 Judicial Dr #100, Fairfax, VA 22030</li>
             <li>LinkedIn: <a href="#" aria-label="LinkedIn placeholder">LinkedIn</a></li>
             <li>Professional Affiliations: [Professional affiliations placeholder]</li>
@@ -170,7 +170,7 @@ formNodes.forEach((form) => {
     event.preventDefault();
     const status = form.querySelector("[data-form-status]");
     if (status) {
-      status.textContent = "Thank you. This front-end form is ready to route to info@cpa-dmv.com or a secure intake workflow.";
+      status.textContent = "Thank you. This front-end form is ready to route to support@cpa-dmv.com or a secure intake workflow.";
     }
     form.reset();
   });
