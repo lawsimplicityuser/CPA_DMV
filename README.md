@@ -1,6 +1,6 @@
-# CPA-DMV.COM Website
+# CPA-DMV Website
 
-Static responsive website for CPA-DMV.COM.
+Static responsive website for CPA-DMV.
 
 ## Open locally
 
@@ -11,6 +11,9 @@ Open `index.html` in a browser. No build step or package install is required.
 - Home
 - About Us
 - Services
+- CDFA Services
+- Fraud Services
+- Industries
 - Specialized Audit & Advisory
 - Credit Union Audits
 - Single Audits / Uniform Guidance
@@ -22,18 +25,11 @@ Open `index.html` in a browser. No build step or package install is required.
 - HR Support & Advisory
 - Taxation Services
 - Business Registration
-- Resources / Tax Updates
+- Tax Resources
 - Contact
 
 ## Placeholders to replace
 
-- Phone number
-- Email address
-- Office address
 - Confirmed professional affiliations
 - Social links
 - Contact form destination or secure intake workflow
-
-##
-## 
-## 

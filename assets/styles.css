@@ -263,7 +263,7 @@ li {
   position: absolute;
   left: 0;
   top: calc(100% + 10px);
-  width: 292px;
+  width: 318px;
   padding: 0.55rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -553,6 +553,59 @@ li {
   border-bottom: 0;
 }
 
+.visual-kicker {
+  display: inline-flex;
+  margin-bottom: 0.85rem;
+  padding: 0.3rem 0.58rem;
+  border-radius: 999px;
+  color: var(--navy);
+  background: rgba(181, 138, 58, 0.16);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.visual-panel h2,
+.visual-panel h3 {
+  margin-bottom: 0.55rem;
+  color: var(--navy-2);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  line-height: 1.12;
+}
+
+.visual-panel p {
+  color: var(--slate);
+  font-size: 0.95rem;
+}
+
+.visual-service-list {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visual-service-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.65rem 0.78rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--slate);
+  background: #f8fafc;
+  font-size: 0.85rem;
+  font-weight: 750;
+}
+
+.visual-service-list strong {
+  color: var(--navy);
+}
+
 .status-pill {
   display: inline-flex;
   justify-content: center;
@@ -659,6 +712,37 @@ li {
   margin-bottom: 0;
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.definition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.definition-card {
+  padding: 1.35rem;
+  border: 1px solid rgba(181, 138, 58, 0.28);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-soft);
+}
+
+.definition-card span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.definition-card strong {
+  display: block;
+  color: var(--navy-2);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  line-height: 1.16;
 }
 
 .trust-grid,
@@ -894,6 +978,58 @@ td {
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.resource-accordion {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.resource-accordion details {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.resource-accordion summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  color: var(--navy-2);
+  font-weight: 850;
+  cursor: pointer;
+  list-style: none;
+}
+
+.resource-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.resource-accordion summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.resource-accordion details[open] summary::after {
+  content: "-";
+}
+
+.resource-accordion .accordion-body {
+  padding: 0 1.1rem 1.05rem;
+  border-top: 1px solid var(--line);
+}
+
+.resource-accordion p,
+.resource-accordion ul {
+  margin-bottom: 0;
 }
 
 .contact-grid {
@@ -1196,7 +1332,9 @@ textarea:focus {
 
   .quick-contact,
   .brand-pillars,
+  .definition-grid,
   .resource-grid,
+  .resource-accordion,
   .feature-grid,
   .cta-band {
     grid-template-columns: 1fr;

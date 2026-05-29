@@ -9,14 +9,14 @@ if (headerTarget) {
       <a class="skip-link" href="#main">Skip to content</a>
       <div class="top-strip">
         <div class="container">
-          <span>Serving the DMV region with Dedication, Mastery &amp; Vision</span>
-          <span><a href="tel:+1-000-000-0000">(000) 000-0000</a> | <a href="mailto:support@cpa-dmv.com">support@cpa-dmv.com</a></span>
+          <span>CPA services for the District of Columbia, Maryland, and Virginia</span>
+          <span><a href="mailto:info@cpa-dmv.com">info@cpa-dmv.com</a></span>
         </div>
       </div>
       <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="CPA-DMV.COM home">
-          <img src="assets/logo-dmv-cpa.svg" alt="CPA-DMV.COM logo">
-          <span><strong>CPA-DMV.COM</strong><span>Dedication &bull; Mastery &bull; Vision</span></span>
+        <a class="brand" href="index.html" aria-label="CPA-DMV home">
+          <img src="assets/logo-dmv-cpa.svg" alt="CPA-DMV logo">
+          <span><strong>CPA-DMV</strong><span>Certified Public Accountant</span></span>
         </a>
         <nav aria-label="Main navigation">
           <ul class="nav-menu">
@@ -25,26 +25,30 @@ if (headerTarget) {
             <li class="has-dropdown">
               <button class="dropdown-toggle" type="button" aria-expanded="false">Services</button>
               <div class="dropdown">
-                <a href="services.html"${isCurrent("services.html")}>Services Overview</a>
+                <a href="services.html"${isCurrent("services.html")}>All Services</a>
+                <a href="cdfa-services.html"${isCurrent("cdfa-services.html")}>CDFA Services</a>
+                <a href="specialized-audit-advisory.html"${isCurrent("specialized-audit-advisory.html")}>Specialized Audit Services</a>
+                <a href="fraud-services.html"${isCurrent("fraud-services.html")}>Fraud Services</a>
                 <a href="accounting-bookkeeping.html"${isCurrent("accounting-bookkeeping.html")}>Accounting &amp; Bookkeeping</a>
+                <a href="taxation-services.html"${isCurrent("taxation-services.html")}>Tax Services</a>
+                <a href="resources-tax-updates.html"${isCurrent("resources-tax-updates.html")}>Tax Resources</a>
                 <a href="quickbooks-setup-training.html"${isCurrent("quickbooks-setup-training.html")}>QuickBooks Setup &amp; Training</a>
                 <a href="payroll-services.html"${isCurrent("payroll-services.html")}>Payroll Services</a>
                 <a href="hr-support-advisory.html"${isCurrent("hr-support-advisory.html")}>HR Support &amp; Advisory</a>
-                <a href="taxation-services.html"${isCurrent("taxation-services.html")}>Taxation Services</a>
                 <a href="business-registration.html"${isCurrent("business-registration.html")}>Business Registration</a>
               </div>
             </li>
             <li class="has-dropdown">
               <button class="dropdown-toggle" type="button" aria-expanded="false">Industries</button>
               <div class="dropdown">
-                <a href="specialized-audit-advisory.html"${isCurrent("specialized-audit-advisory.html")}>Specialized Audit &amp; Advisory</a>
-                <a href="credit-union-audits.html"${isCurrent("credit-union-audits.html")}>Credit Union Audits</a>
-                <a href="single-audits-uniform-guidance.html"${isCurrent("single-audits-uniform-guidance.html")}>Single Audits / Uniform Guidance</a>
+                <a href="industries.html"${isCurrent("industries.html")}>Industries</a>
+                <a href="credit-union-audits.html"${isCurrent("credit-union-audits.html")}>Credit Unions</a>
+                <a href="industries.html#non-profit">Non-Profit Organizations</a>
                 <a href="assisted-living-facilities.html"${isCurrent("assisted-living-facilities.html")}>Assisted Living Facilities</a>
                 <a href="classrooms-educational-institutions.html"${isCurrent("classrooms-educational-institutions.html")}>Educational Institutions</a>
+                <a href="single-audits-uniform-guidance.html"${isCurrent("single-audits-uniform-guidance.html")}>Government / Federally Funded</a>
               </div>
             </li>
-            <li><a class="nav-link" href="resources-tax-updates.html"${isCurrent("resources-tax-updates.html")}>Tax Resources</a></li>
             <li><a class="nav-link" href="contact.html"${isCurrent("contact.html")}>Contact</a></li>
           </ul>
         </nav>
@@ -63,19 +67,21 @@ if (footerTarget) {
     <footer class="site-footer">
       <div class="container footer-main">
         <div>
-          <a class="brand" href="index.html" aria-label="CPA-DMV.COM home">
-            <img src="assets/logo-dmv-cpa.svg" alt="CPA-DMV.COM logo">
-            <span><strong>CPA-DMV.COM</strong><span>Dedication &bull; Mastery &bull; Vision</span></span>
+          <a class="brand" href="index.html" aria-label="CPA-DMV home">
+            <img src="assets/logo-dmv-cpa.svg" alt="CPA-DMV logo">
+            <span><strong>CPA-DMV</strong><span>Certified Public Accountant</span></span>
           </a>
-          <p>Specialized CPA, audit, tax, accounting, payroll, QuickBooks, HR advisory, and consulting support for clients across the District of Columbia, Maryland, and Virginia.</p>
-          <p>Where financial precision meets Dedication &bull; Mastery &bull; Vision.</p>
-          <p>Placeholders: professional affiliations, social links, and final firm address to be added when provided.</p>
+          <p>Premium CPA, tax, audit, accounting, CDFA, fraud advisory, payroll, QuickBooks, HR advisory, and business registration support.</p>
+          <p>Serving clients across the District of Columbia, Maryland, and Virginia from Fairfax, VA.</p>
         </div>
         <div>
           <h3>Services</h3>
           <ul>
-            <li><a href="taxation-services.html">Taxation Services</a></li>
+            <li><a href="cdfa-services.html">CDFA Services</a></li>
+            <li><a href="specialized-audit-advisory.html">Specialized Audit Services</a></li>
+            <li><a href="fraud-services.html">Fraud Services</a></li>
             <li><a href="accounting-bookkeeping.html">Accounting &amp; Bookkeeping</a></li>
+            <li><a href="taxation-services.html">Tax Services</a></li>
             <li><a href="quickbooks-setup-training.html">QuickBooks Setup &amp; Training</a></li>
             <li><a href="payroll-services.html">Payroll Services</a></li>
             <li><a href="hr-support-advisory.html">HR Support &amp; Advisory</a></li>
@@ -85,25 +91,27 @@ if (footerTarget) {
         <div>
           <h3>Industries</h3>
           <ul>
+            <li><a href="industries.html">Industries</a></li>
             <li><a href="credit-union-audits.html">Credit Unions</a></li>
-            <li><a href="single-audits-uniform-guidance.html">Single Audits</a></li>
+            <li><a href="industries.html#non-profit">Non-Profit Organizations</a></li>
             <li><a href="assisted-living-facilities.html">Assisted Living Facilities</a></li>
             <li><a href="classrooms-educational-institutions.html">Educational Institutions</a></li>
+            <li><a href="single-audits-uniform-guidance.html">Government / Federally Funded</a></li>
           </ul>
         </div>
         <div>
           <h3>Contact</h3>
           <ul>
-            <li>Phone: <a href="tel:+1-000-000-0000">(000) 000-0000</a></li>
-            <li>Email: <a href="mailto:support@cpa-dmv.com">support@cpa-dmv.com</a></li>
-            <li>Address: [DMV office address placeholder]</li>
-            <li>Service Area: District of Columbia, Maryland, and Virginia</li>
+            <li>Email: <a href="mailto:info@cpa-dmv.com">info@cpa-dmv.com</a></li>
+            <li>Address: 10521 Judicial Dr #100, Fairfax, VA 22030</li>
+            <li>LinkedIn: <a href="#" aria-label="LinkedIn placeholder">LinkedIn</a></li>
+            <li>Professional Affiliations: [Professional affiliations placeholder]</li>
           </ul>
         </div>
       </div>
       <div class="container footer-bottom">
-        <span>&copy; <span data-current-year></span> CPA-DMV.COM. All rights reserved.</span>
-        <span>CPA DMV | Dedication &bull; Mastery &bull; Vision</span>
+        <span>&copy; <span data-current-year></span> CPA-DMV. All rights reserved.</span>
+        <span>District of Columbia | Maryland | Virginia</span>
       </div>
     </footer>
   `;
@@ -162,7 +170,7 @@ formNodes.forEach((form) => {
     event.preventDefault();
     const status = form.querySelector("[data-form-status]");
     if (status) {
-      status.textContent = "Thank you. This demo form is ready to connect to your email or CRM endpoint.";
+      status.textContent = "Thank you. This front-end form is ready to route to info@cpa-dmv.com or a secure intake workflow.";
     }
     form.reset();
   });

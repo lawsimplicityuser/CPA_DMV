@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact CPA-DMV.COM | Schedule a CPA Consultation</title>
-  <meta name="description" content="Contact CPA-DMV.COM to schedule a consultation for tax preparation, audit, accounting, bookkeeping, QuickBooks, payroll, HR advisory, business registration, or consulting services in the DMV area.">
+  <title>Contact CPA-DMV | Schedule a CPA Consultation</title>
+  <meta name="description" content="Contact CPA-DMV to schedule a consultation for tax preparation, audit planning, bookkeeping cleanup, payroll support, QuickBooks assistance, CDFA services, fraud services, or entity setup guidance.">
   <link rel="icon" href="assets/logo-dmv-cpa.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css">
-  <script defer src="assets/site.js"></script>
+  <link rel="stylesheet" href="assets/styles.css?v=20260529">
+  <script defer src="assets/site.js?v=20260529"></script>
 </head>
 <body>
   <div data-site-header></div>
@@ -16,8 +16,8 @@
       <div class="container">
         <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
         <p class="eyebrow">Contact CPA-DMV</p>
-        <h1>Schedule a consultation with CPA-DMV.COM.</h1>
-        <p>Tell us about your tax, audit, accounting, payroll, QuickBooks, HR advisory, business registration, or consulting needs. We serve businesses, non-profits, institutions, and individuals across Washington DC, Maryland, and Virginia.</p>
+        <h1>Start the Conversation</h1>
+        <p>Tell us how we can assist you. Use the form for tax preparation, audit planning, bookkeeping cleanup, payroll support, QuickBooks assistance, or entity setup guidance. Our team will review your request and respond with clear, professional next steps.</p>
       </div>
     </section>
 
@@ -26,53 +26,38 @@
         <div class="contact-card fade-up">
           <p class="eyebrow">Contact information</p>
           <h2>We are ready to understand what needs attention.</h2>
-          <p>Use the contact details below as placeholders until final firm contact information is confirmed.</p>
+          <p>Use the email link below or the front-end form placeholder to share the service needed, deadline, records, and questions involved in your request.</p>
           <div class="contact-list">
-            <div><strong>Phone</strong><a href="tel:+1-000-000-0000">(000) 000-0000</a></div>
-            <div><strong>Email</strong><a href="mailto:support@cpa-dmv.com">support@cpa-dmv.com</a></div>
-            <div><strong>Office address</strong>[DMV office address placeholder]</div>
-            <div><strong>Service area</strong>Washington DC, Maryland, and Virginia</div>
-            <div><strong>Affiliations</strong>[Professional affiliations placeholder]</div>
-            <div><strong>Social links</strong>[LinkedIn] [Facebook] [X]</div>
+            <div><strong>Email</strong><a href="mailto:info@cpa-dmv.com">info@cpa-dmv.com</a></div>
+            <div><strong>Office address</strong>10521 Judicial Dr #100, Fairfax, VA 22030</div>
+            <div><strong>LinkedIn</strong><a href="#" aria-label="LinkedIn placeholder">LinkedIn</a></div>
+            <div><strong>Professional Affiliations:</strong>[Professional affiliations placeholder]</div>
           </div>
         </div>
         <div class="contact-card fade-up">
-          <form data-contact-form>
+          <form data-contact-form action="mailto:info@cpa-dmv.com" method="post" enctype="text/plain">
             <div class="form-grid">
-              <label>Full name<input name="name" autocomplete="name" required></label>
+              <label>Name<input name="name" autocomplete="name" required></label>
               <label>Email<input name="email" type="email" autocomplete="email" required></label>
             </div>
-            <div class="form-grid">
-              <label>Phone<input name="phone" autocomplete="tel"></label>
-              <label>Client type
-                <select name="client-type">
-                  <option>Business</option>
-                  <option>Non-profit</option>
-                  <option>Credit union</option>
-                  <option>Assisted living facility</option>
-                  <option>Educational institution</option>
-                  <option>Individual</option>
-                </select>
-              </label>
-            </div>
-            <label>Service interest
+            <label>Organization / Company<input name="organization" autocomplete="organization"></label>
+            <label>Service Needed
               <select name="service">
-                <option>Schedule a Consultation</option>
-                <option>Taxation Services</option>
-                <option>Credit Union Audits</option>
-                <option>Single Audits / Uniform Guidance</option>
-                <option>Assisted Living Facilities</option>
-                <option>Classrooms &amp; Educational Institutions</option>
+                <option>CDFA Services</option>
+                <option>Specialized Audit Services</option>
+                <option>Fraud Services</option>
                 <option>Accounting &amp; Bookkeeping</option>
+                <option>Tax Services</option>
                 <option>QuickBooks Setup &amp; Training</option>
                 <option>Payroll Services</option>
                 <option>HR Support &amp; Advisory</option>
                 <option>Business Registration</option>
+                <option>Other CPA Advisory Support</option>
               </select>
             </label>
-            <label>Message<textarea name="message" placeholder="Share your deadline, entity type, location, and the support you need"></textarea></label>
-            <button class="btn primary" type="submit">Contact CPA-DMV</button>
-            <p class="form-note" data-form-status>This form is a front-end placeholder and can be connected to a secure intake workflow.</p>
+            <label>Message<textarea name="message" placeholder="Share your deadline, entity type, and the support you need"></textarea></label>
+            <button class="btn primary" type="submit">Schedule a Consultation</button>
+            <p class="form-note" data-form-status>This form is a front-end placeholder. You may also email <a href="mailto:info@cpa-dmv.com">info@cpa-dmv.com</a>.</p>
           </form>
         </div>
       </div>
@@ -87,15 +72,19 @@
         <div class="service-grid">
           <article class="service-card fade-up">
             <h3>Tax and accounting</h3>
-            <p>Tax preparation DMV support, bookkeeping cleanup, monthly accounting, estimated tax planning, and business tax reminders.</p>
+            <p>Tax preparation, bookkeeping cleanup, monthly accounting, estimated tax planning, and business tax reminders.</p>
           </article>
           <article class="service-card fade-up">
-            <h3>Audit and advisory</h3>
-            <p>Credit union audit CPA services, Single Audit Uniform Guidance CPA support, ALF accounting, and education-focused audits.</p>
+            <h3>Audit, fraud, and controls</h3>
+            <p>Specialized audit planning, fraud detection support, internal control reviews, financial irregularity analysis, and board-ready documentation.</p>
+          </article>
+          <article class="service-card fade-up">
+            <h3>CDFA and life transitions</h3>
+            <p>Divorce financial analysis involving assets, cash flow, tax impacts, retirement accounts, settlements, and long-term outcomes.</p>
           </article>
           <article class="service-card fade-up">
             <h3>Operations and setup</h3>
-            <p>QuickBooks CPA support, payroll services DMV guidance, HR advisory, and business registration CPA assistance.</p>
+            <p>QuickBooks support, payroll guidance, HR advisory, and business registration assistance.</p>
           </article>
         </div>
       </div>
