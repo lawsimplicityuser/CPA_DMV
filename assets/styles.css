@@ -357,8 +357,7 @@ li {
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: clamp(650px, 78vh, 750px);
-  padding: 0;
+  padding: 44px 0 42px;
   color: var(--white);
   background: linear-gradient(115deg, rgba(3, 31, 69, 0.99), rgba(8, 43, 92, 0.98));
 }
@@ -387,11 +386,10 @@ li {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 45%) minmax(0, 55%);
-  align-items: stretch;
-  width: 100%;
-  min-height: clamp(650px, 78vh, 750px);
-  gap: 0;
+  grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
+  align-items: center;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  min-height: clamp(420px, 46vw, 520px);
 }
 
 .hero-grid > *,
@@ -406,31 +404,31 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: none;
-  padding: clamp(48px, 7vw, 88px) clamp(28px, 4vw, 58px) clamp(48px, 7vw, 88px) max(32px, calc((100vw - var(--container)) / 2 + 16px));
+  max-width: 620px;
+  padding: clamp(18px, 2.8vw, 32px) 0;
 }
 
 .hero h1 {
   max-width: 620px;
   margin-bottom: 0.85rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.5rem, 4.6vw, 4.35rem);
-  line-height: 1.02;
+  font-size: clamp(2.15rem, 4.1vw, 3.75rem);
+  line-height: 1.03;
   letter-spacing: 0;
   overflow-wrap: break-word;
 }
 
 .hero p {
-  max-width: 600px;
+  max-width: 620px;
   color: rgba(255, 255, 255, 0.84);
-  font-size: clamp(1rem, 1.55vw, 1.14rem);
+  font-size: clamp(1rem, 1.55vw, 1.12rem);
 }
 
 .hero-proof {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 1.2rem 0 1.45rem;
+  margin: 1.1rem 0 1.15rem;
 }
 
 .hero-proof span {
@@ -449,39 +447,24 @@ li {
 
 .hero .button-row {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  width: min(100%, 660px);
   flex-wrap: nowrap;
-  gap: 18px;
-  width: max-content;
-  max-width: 100%;
-  padding: 0;
-  border-radius: 0;
-  background: transparent;
-  backdrop-filter: none;
+  gap: 0.55rem;
+  padding: 0.35rem;
+  border-radius: 16px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  backdrop-filter: blur(12px);
 }
-
 .hero .button-row .btn {
-  flex: 0 0 auto;
-  min-width: max-content;
-  min-height: 52px;
-  padding: 14px 24px;
-  border-radius: 12px;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 46px;
+  padding: 0.78rem 0.95rem;
   white-space: nowrap;
 }
 
 .hero .button-row .btn.primary {
-  color: var(--white);
-  background: var(--navy);
   box-shadow: 0 16px 34px rgba(3, 31, 69, 0.28);
-}
-
-.hero .button-row .btn.light,
-.hero .button-row .btn.secondary {
-  color: var(--navy);
-  border-color: rgba(8, 43, 92, 0.22);
-  background: var(--white);
 }
 
 .hero-visual {
@@ -491,9 +474,8 @@ li {
   min-height: 100%;
   align-self: stretch;
   width: 100%;
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
+  min-height: clamp(360px, 41vw, 500px);
+  max-width: 100%;
 }
 
 .hero-image-blend {
@@ -502,6 +484,7 @@ li {
   height: 100%;
   min-height: clamp(650px, 78vh, 750px);
   overflow: hidden;
+  border-radius: 0;
 }
 
 .hero-image-blend::before {
@@ -524,10 +507,10 @@ li {
 .hero-image-blend img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   filter: saturate(0.94) contrast(1.02) brightness(0.98);
-  transform: none;
+  transform: scale(1.01);
 }
 
 .visual-panel {
@@ -1414,13 +1397,9 @@ textarea:focus {
   }
 
   .hero-visual {
-    width: 100%;
-    min-height: clamp(320px, 52vw, 460px);
-    margin: 0;
-  }
-
-  .hero-image-blend {
-    min-height: clamp(320px, 52vw, 460px);
+    min-height: clamp(300px, 52vw, 420px);
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .hero-image-blend::before {
@@ -1496,7 +1475,7 @@ textarea:focus {
   }
 
   .hero {
-    padding: 0;
+    padding: 38px 0 34px;
   }
 
   .hero::after {
@@ -1529,15 +1508,10 @@ textarea:focus {
     border-bottom: 0;
   }
 
-  .featured-service-card .btn {
-    width: 100%;
-  }
-
+  .featured-service-card .btn,
   .hero .button-row {
     width: 100%;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 14px;
+    flex-wrap: wrap;
     padding: 0;
     background: transparent;
     backdrop-filter: none;
@@ -1566,6 +1540,10 @@ textarea:focus {
   .button-row {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .hero .button-row .btn {
+    width: 100%;
   }
 
   .hero h1 {
