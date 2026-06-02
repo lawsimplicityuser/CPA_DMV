@@ -7,12 +7,6 @@ if (headerTarget) {
   headerTarget.outerHTML = `
     <header class="site-header">
       <a class="skip-link" href="#main">Skip to content</a>
-      <div class="top-strip">
-        <div class="container">
-          <span>CPA services for the District of Columbia, Maryland, and Virginia</span>
-          <span><a href="mailto:support@cpa-dmv.com">support@cpa-dmv.com</a></span>
-        </div>
-      </div>
       <div class="container nav-wrap">
         <a class="brand" href="index.html" aria-label="CPA-DMV home">
           <img src="assets/logo-dmv-cpa.svg" alt="CPA-DMV logo">
@@ -25,13 +19,11 @@ if (headerTarget) {
             <li class="has-dropdown">
               <button class="dropdown-toggle" type="button" aria-expanded="false">Services</button>
               <div class="dropdown">
-                <a href="services.html"${isCurrent("services.html")}>All Services</a>
                 <a href="cdfa-services.html"${isCurrent("cdfa-services.html")}>CDFA Services</a>
                 <a href="specialized-audit-advisory.html"${isCurrent("specialized-audit-advisory.html")}>Specialized Audit Services</a>
-                <a href="fraud-services.html"${isCurrent("fraud-services.html")}>Fraud Services</a>
+                <a href="forensic-audit-services.html"${isCurrent("forensic-audit-services.html")}>Forensic Audit Services</a>
                 <a href="accounting-bookkeeping.html"${isCurrent("accounting-bookkeeping.html")}>Accounting &amp; Bookkeeping</a>
                 <a href="taxation-services.html"${isCurrent("taxation-services.html")}>Tax Services</a>
-                <a href="resources-tax-updates.html"${isCurrent("resources-tax-updates.html")}>Tax Resources</a>
                 <a href="quickbooks-setup-training.html"${isCurrent("quickbooks-setup-training.html")}>QuickBooks Setup &amp; Training</a>
                 <a href="payroll-services.html"${isCurrent("payroll-services.html")}>Payroll Services</a>
                 <a href="hr-support-advisory.html"${isCurrent("hr-support-advisory.html")}>HR Support &amp; Advisory</a>
@@ -71,7 +63,7 @@ if (footerTarget) {
             <img src="assets/logo-dmv-cpa.svg" alt="CPA-DMV logo">
             <span><strong>CPA-DMV</strong><span>Certified Public Accountant</span></span>
           </a>
-          <p>Premium CPA, tax, audit, accounting, CDFA, fraud advisory, payroll, QuickBooks, HR advisory, and business registration support.</p>
+          <p>Premium CPA, tax, audit, accounting, CDFA, forensic audit advisory, payroll, QuickBooks, HR advisory, and business registration support.</p>
           <p>Serving clients across the District of Columbia, Maryland, and Virginia from Fairfax, VA.</p>
         </div>
         <div>
@@ -79,7 +71,7 @@ if (footerTarget) {
           <ul>
             <li><a href="cdfa-services.html">CDFA Services</a></li>
             <li><a href="specialized-audit-advisory.html">Specialized Audit Services</a></li>
-            <li><a href="fraud-services.html">Fraud Services</a></li>
+            <li><a href="forensic-audit-services.html">Forensic Audit Services</a></li>
             <li><a href="accounting-bookkeeping.html">Accounting &amp; Bookkeeping</a></li>
             <li><a href="taxation-services.html">Tax Services</a></li>
             <li><a href="quickbooks-setup-training.html">QuickBooks Setup &amp; Training</a></li>
