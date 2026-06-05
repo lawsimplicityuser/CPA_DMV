@@ -1429,7 +1429,7 @@ textarea:focus {
   }
 
   .hero-grid {
-    gap: 0;
+    gap: 1.4rem;
     min-height: auto;
   }
 
