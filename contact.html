@@ -7,7 +7,7 @@
   <meta name="description" content="Contact CPA-DMV to schedule a consultation for CDFA services, tax preparation, audit planning, bookkeeping cleanup, payroll support, QuickBooks assistance, forensic audit services, or entity setup guidance.">
   <link rel="icon" href="assets/logo-dmv-cpa.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css?v=20260602">
-  <script defer src="assets/site.js?v=20260602"></script>
+  <script defer src="assets/site.js?v=20260605"></script>
 </head>
 <body>
   <div data-site-header></div>
@@ -26,7 +26,7 @@
         <div class="contact-card fade-up">
           <p class="eyebrow">Contact information</p>
           <h2>We are ready to understand what needs attention.</h2>
-          <p>Use the email link below or the front-end form placeholder to share the service needed, deadline, records, and questions involved in your request.</p>
+          <p>Use the email link below or the secure consultation form to share the service needed, deadline, records, and questions involved in your request.</p>
           <div class="contact-list">
             <div><strong>Email</strong><a href="mailto:support@cpa-dmv.com">support@cpa-dmv.com</a></div>
             <div><strong>Office address</strong>10521 Judicial Dr #100, Fairfax, VA 22030</div>
@@ -35,14 +35,14 @@
           </div>
         </div>
         <div class="contact-card fade-up">
-          <form data-contact-form action="mailto:support@cpa-dmv.com" method="post" enctype="text/plain">
+          <form data-contact-form action="https://formspree.io/f/xeewowjr" method="POST">
             <div class="form-grid">
               <label>Name<input name="name" autocomplete="name" required></label>
               <label>Email<input name="email" type="email" autocomplete="email" required></label>
             </div>
             <label>Organization / Company<input name="organization" autocomplete="organization"></label>
             <label>Service Needed
-              <select name="service">
+              <select name="service_needed">
                 <option>CDFA Services</option>
                 <option>Specialized Audit Services</option>
                 <option>Forensic Audit Services</option>
@@ -57,7 +57,7 @@
             </label>
             <label>Message<textarea name="message" placeholder="Share your deadline, entity type, and the support you need"></textarea></label>
             <button class="btn primary" type="submit">Schedule a Consultation</button>
-            <p class="form-note" data-form-status>This form is a front-end placeholder. You may also email <a href="mailto:support@cpa-dmv.com">support@cpa-dmv.com</a>.</p>
+            <p class="form-note" data-form-status>Your consultation request will be sent securely. You may also email <a href="mailto:support@cpa-dmv.com">support@cpa-dmv.com</a>.</p>
           </form>
         </div>
       </div>
