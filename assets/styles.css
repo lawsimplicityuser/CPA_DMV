@@ -476,6 +476,27 @@ li {
   font-weight: 800;
 }
 
+
+.service-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.service-strip span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0.28rem 0.62rem;
+  border: 1px solid rgba(8, 43, 92, 0.14);
+  border-radius: 999px;
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
 .visual-panel {
   width: min(440px, 100%);
   padding: 1.05rem;
