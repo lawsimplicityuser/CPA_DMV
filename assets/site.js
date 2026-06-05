@@ -112,7 +112,6 @@ if (footerTarget) {
 const header = document.querySelector(".site-header");
 const menuButton = document.querySelector(".menu-button");
 const yearNodes = document.querySelectorAll("[data-current-year]");
-const formNodes = document.querySelectorAll("[data-contact-form]");
 
 yearNodes.forEach((node) => {
   node.textContent = new Date().getFullYear();
@@ -156,14 +155,3 @@ if ("IntersectionObserver" in window) {
 } else {
   document.querySelectorAll(".fade-up").forEach((node) => node.classList.add("is-visible"));
 }
-
-formNodes.forEach((form) => {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const status = form.querySelector("[data-form-status]");
-    if (status) {
-      status.textContent = "Thank you. This front-end form is ready to route to support@cpa-dmv.com or a secure intake workflow.";
-    }
-    form.reset();
-  });
-});
